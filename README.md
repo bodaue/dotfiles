@@ -4,7 +4,7 @@ My personal dotfiles, managed with [GNU Stow](https://www.gnu.org/software/stow/
 
 ## What's inside
 
-- **Shell** — `.zshrc`, `.bashrc`, `.profile`, `.bash_logout`
+- **Shell** — `.zshrc`, `.profile`
 - **Git** — `.gitconfig`, global ignore
 - **Micro** — theme, keybindings
 - **k9s** — config, aliases, dark skin
