@@ -1,0 +1,100 @@
+k9s:
+  body:
+    fgColor: '#cccccc'  # чисто серый, без синевы
+    bgColor: default
+    logoColor: '#808080'
+  prompt:
+    fgColor: '#cccccc'
+    bgColor: default
+    suggestColor: '#808080'
+  help:
+    fgColor: '#cccccc'
+    bgColor: default
+    sectionColor: '#bbbbbb'
+    keyColor: '#cc7832'
+    numKeyColor: '#6897bb'
+  frame:
+    title:
+      fgColor: '#bbbbbb'
+      bgColor: default
+      highlightColor: '#ffc66d'
+      counterColor: '#808080'
+      filterColor: '#6a8759'
+    border:
+      fgColor: '#646464'
+      focusColor: '#bbbbbb'
+    menu:
+      fgColor: '#cccccc'
+      keyColor: '#cc7832'
+      numKeyColor: '#6897bb'
+    crumbs:
+      fgColor: '#808080'
+      bgColor: default
+      activeColor: '#bbbbbb'
+    status:
+      newColor: '#6897bb'
+      modifyColor: '#ffc66d'
+      addColor: '#6a8759'
+      pendingColor: '#cc7832'
+      errorColor: '#bc3f3c'
+      highlightColor: '#bbbbbb'
+      killColor: '#bc3f3c'
+      completedColor: '#606060'
+  info:
+    fgColor: '#bbbbbb'
+    sectionColor: '#cccccc'
+  views:
+    table:
+      fgColor: '#cccccc'  # чисто серый основной текст
+      bgColor: default
+      cursorFgColor: '#ffffff'
+      cursorBgColor: '#323232'
+      markColor: '#ffc66d'
+      header:
+        fgColor: '#bbbbbb'
+        bgColor: default
+        sorterColor: '#808080'
+    xray:
+      fgColor: '#cccccc'
+      bgColor: default
+      cursorColor: '#323232'
+      cursorTextColor: '#ffffff'
+      graphicColor: '#bbbbbb'
+    charts:
+      bgColor: default
+      chartBgColor: default
+      dialBgColor: default
+      defaultDialColors:
+        - '#6a8759'
+        - '#bc3f3c'
+      defaultChartColors:
+        - '#6a8759'
+        - '#bc3f3c'
+      resourceColors:
+        cpu:
+          - '#cc7832'
+          - '#ffc66d'
+        mem:
+          - '#6a8759'
+          - '#6897bb'
+    yaml:
+      keyColor: '#9876aa'
+      valueColor: '#cccccc'  # чисто серый
+      colonColor: '#cccccc'
+    logs:
+      fgColor: '#cccccc'  # чисто серый
+      bgColor: default
+      indicator:
+        fgColor: '#808080'
+        bgColor: default
+        toggleOnColor: '#6a8759'
+        toggleOffColor: '#606060'
+  dialog:
+    fgColor: '#bbbbbb'
+    bgColor: default
+    buttonFgColor: '#cccccc'
+    buttonBgColor: default
+    buttonFocusFgColor: '#ffffff'
+    buttonFocusBgColor: '#4b6eaf'
+    labelFgColor: '#bbbbbb'
+    fieldFgColor: '#cccccc'

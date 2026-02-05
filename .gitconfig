@@ -1,0 +1,7 @@
+[user]
+	name = Timur Kerimov
+	email = t.kerimov@ktsstudio.ru
+[core]
+	autocrlf = input
+[alias]
+	c = checkout
