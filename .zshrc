@@ -42,6 +42,17 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+# Обновить текущую ветку от main
+gup() {
+  git fetch origin && git merge origin/main
+}
+
+# Переключение ветки через fzf
+fco() {
+  local branch=$(git branch --all | fzf | sed 's/^[* ]*//' | sed 's|remotes/origin/||')
+  [[ -n $branch ]] && git checkout "$branch"
+}
+
 ssh-connect() {
   local host=$(grep "^Host" ~/.ssh/config | grep -v "*" | awk '{print $2}' | fzf)
   [[ -n $host ]] && ssh "$host"
@@ -82,3 +93,6 @@ _auto_venv() {
 
 add-zsh-hook chpwd _auto_venv
 _auto_venv  # Выполни сразу для текущей директории
+
+# zoxide
+eval "$(zoxide init zsh --cmd cd)"

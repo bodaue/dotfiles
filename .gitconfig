@@ -4,4 +4,4 @@
 [core]
 	autocrlf = input
 [alias]
-	c = checkout
+	c = "!f() { branch=$(git branch -a --format='%(refname:short)' | sed 's|^origin/||' | grep -v '^HEAD$' | sort -u | grep -i \"$1\" | fzf --select-1 --exit-0); if [ -n \"$branch\" ]; then git checkout \"$branch\"; else echo \"No branch matching *$1*\"; fi; }; f"
