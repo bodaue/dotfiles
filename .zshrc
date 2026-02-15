@@ -16,8 +16,7 @@ export FZF_DEFAULT_OPTS='--height 20'
 
 # aliases
 alias bat='batcat'
-alias copy='win32yank.exe -i'
-alias open='explorer.exe'
+
 alias ls='eza --icons --color=auto'
 alias ll='eza -lah --icons --git'
 
@@ -25,7 +24,6 @@ source <(kubectl completion zsh)
 alias k=kubectl
 compdef k=kubectl
 
-export VIMINIT='source ~/.config/vim/vimrc'
 alias e='micro'
 export EDITOR=micro
 
@@ -36,11 +34,9 @@ export zc=~/.zshrc
 . "$HOME/.local/bin/env"
 
 # Исправить цвета папок
-export LS_COLORS="ow=01;34:tw=01;34:$LS_COLORS"
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Обновить текущую ветку от main
 gup() {
@@ -48,10 +44,6 @@ gup() {
 }
 
 # Переключение ветки через fzf
-fco() {
-  local branch=$(git branch --all | fzf | sed 's/^[* ]*//' | sed 's|remotes/origin/||')
-  [[ -n $branch ]] && git checkout "$branch"
-}
 
 ssh-connect() {
   local host=$(grep "^Host" ~/.ssh/config | grep -v "*" | awk '{print $2}' | fzf)
