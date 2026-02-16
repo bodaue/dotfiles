@@ -27,6 +27,8 @@ compdef k=kubectl
 alias e='micro'
 export EDITOR=micro
 
+alias copy='wl-copy'
+
 # Переменные для конфига
 export ZC=~/.zshrc
 export zc=~/.zshrc
@@ -88,3 +90,6 @@ _auto_venv  # Выполни сразу для текущей директори
 
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
